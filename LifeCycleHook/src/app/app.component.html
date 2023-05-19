@@ -1,0 +1,10 @@
+<div class="container">
+  <input type="text" #input>
+  <button (click)="OnSubmit(input)">Submit</button>
+  <app-demo [value]="inputText" *ngIf="destroy">
+    <h1>This is a heading</h1>
+  </app-demo>
+
+  <br><br>
+  <button (click)="DestroyComponent()">Destroy</button>
+</div>
